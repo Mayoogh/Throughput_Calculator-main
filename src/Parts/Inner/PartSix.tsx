@@ -18,7 +18,9 @@ export const PartSix = ({ botID, sortationTime }: PartSixProps) => {
             <h3 className="font-bold underline">{bot.name}</h3>
             <h3>Initial Battery: {bot.startBattery} (V)</h3>
             <h3>Final Battery: {bot.stopBattery} (V)</h3>
-            <h3>Battery Discharge: {bot.discharge} V</h3>
+            <h3>
+              Battery Discharge: {(Number(bot.discharge).toFixed(2))} V
+            </h3>
             {sortationTime && (
               <h3>
                 Discharge rate:
