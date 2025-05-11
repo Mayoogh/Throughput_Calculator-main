@@ -16,10 +16,10 @@ export const PartSix = ({ botID, sortationTime }: PartSixProps) => {
             className="flex flex-col gap-2 items-center justify-center"
           >
             <h3 className="font-bold underline">{bot.name}</h3>
-            <h3>Initial Battery: {bot.startBattery} (V)</h3>
-            <h3>Final Battery: {bot.stopBattery} (V)</h3>
+            <h3>Initial: {bot.startBattery} (V)</h3>
+            <h3>Final: {bot.stopBattery} (V)</h3>
             <h3>
-              Battery Discharge: {(Number(bot.discharge).toFixed(2))} V
+              Discharge: {(Number(bot.discharge).toFixed(2))} V
             </h3>
             {sortationTime && (
               <h3>
