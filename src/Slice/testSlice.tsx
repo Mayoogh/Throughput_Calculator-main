@@ -22,6 +22,7 @@ const initialState: TestProps = {
   outOfBin: "",
   rejections: "",
   Duration: "",
+  manualInterventions: "",
 };
 
 const testSlice = createSlice({
