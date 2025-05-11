@@ -53,6 +53,7 @@ export const Inputs = () => {
       Rejections: test.rejections ?? "",
       Remarks: test.remarks ?? "",
       Duration: test.Duration ?? "",
+      "Manual Intervention": test.manualInterventions ?? "",
     };
 
     Object.entries(fieldMap).forEach(([name, value]) => {
@@ -549,6 +550,23 @@ export const Inputs = () => {
             className="px-4 py-1 items-center bg-[#ECEBE4] md:w-full w-[150px] rounded-md"
             onChange={(e) =>
               dispatch(setTestData({ rejections: e.target.value }))
+            }
+          />
+        </div>
+        <div className="row">
+          <label
+            className="text-right pr-5 min-sm:w-[170px] w-[130px]"
+            htmlFor="packetsSorted"
+          >
+            Manual Intervention:
+          </label>
+          <input
+            type="text"
+            id="Session-ID"
+            placeholder="Manual Intervention"
+            className="px-4 py-1 items-center bg-[#ECEBE4] md:w-full w-[150px] rounded-md"
+            onChange={(e) =>
+              dispatch(setTestData({ manualInterventions: e.target.value }))
             }
           />
         </div>

@@ -24,5 +24,6 @@ export interface TestProps {
   wrongSorted: string;
   outOfBin: string;
   rejections: string;
+  manualInterventions: string;
   Duration: string;
 }
