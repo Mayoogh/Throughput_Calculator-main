@@ -86,8 +86,8 @@ export const Inputs = () => {
         };
 
         // Create hidden inputs for each bot's battery data
-        createHidden(`Battery-${bot.name}-Initial`, startBattery.toString());
-        createHidden(`Battery-${bot.name}-Final`, stopBattery.toString());
+        createHidden(`${bot.name}-Initial`, startBattery.toString());
+        createHidden(`${bot.name}-Final`, stopBattery.toString());
       }
     });
 
