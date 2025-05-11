@@ -363,7 +363,7 @@ export const Inputs = () => {
                 className="md:text-right text-left pr-2 md:pr-5 sm:w-[170px] w-[120px]"
                 htmlFor="start"
               >
-                {bot.name} Initial Battery (V)
+                {bot.name} Initial (V)
               </label>
               <input
                 type="number"
@@ -393,7 +393,7 @@ export const Inputs = () => {
                 className="md:text-right text-left pr-2 md:pr-5 sm:w-[170px] w-[120px]"
                 htmlFor="start"
               >
-                {bot.name} Final Battery (V)
+                {bot.name} Final (V)
               </label>
               <input
                 type="number"
