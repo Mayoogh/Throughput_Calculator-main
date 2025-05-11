@@ -101,13 +101,13 @@ export const Inputs = () => {
       console.log(response.data);
 
       if (response.data.result === "success") {
-        console.log("Form submitted successfully!");
+        alert("Form submitted successfully!");
       } else {
-        console.log("Submission failed.");
+        alert("Submission failed. Please try again.");
       }
     } catch (error) {
       console.error("Axios form error:", error);
-      console.log("An error occurred while submitting the form.");
+      alert("An error occurred while submitting the form. Please try again.");
     }
   };
 
