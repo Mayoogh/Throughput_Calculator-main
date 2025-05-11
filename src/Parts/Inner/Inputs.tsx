@@ -130,6 +130,7 @@ export const Inputs = () => {
           <input
             type="date"
             id="date"
+            required
             className="md:max-w-[150px] w-auto p-1 shadow-md rounded-md px-3"
             onChange={(e) => dispatch(setTestData({ date: e.target.value }))}
           />
@@ -146,6 +147,7 @@ export const Inputs = () => {
               <input
                 type="radio"
                 name="test-type"
+                required
                 id="reliability-test"
                 onChange={() => updateTestType({ value: 1, dispatch })}
               />
@@ -228,6 +230,7 @@ export const Inputs = () => {
           </label>
           <input
             type="text"
+            required
             id="Session-ID"
             placeholder="Enter session ID"
             className="px-4 py-1 items-center bg-[#ECEBE4] md:w-full w-[150px] rounded-md"
@@ -246,6 +249,7 @@ export const Inputs = () => {
           <input
             type="text"
             id="testerName"
+            required
             placeholder="Name of Tester"
             className="px-4 py-1 items-center bg-[#ECEBE4] md:w-full w-[150px] rounded-md"
             onChange={(e) =>
@@ -426,6 +430,7 @@ export const Inputs = () => {
           </label>
           <input
             type="time"
+            required
             id="start"
             className="px-4 py-1 items-center bg-[#ECEBE4] md:w-full w-[150px] check-time rounded-md"
             onChange={(e) =>
@@ -443,6 +448,7 @@ export const Inputs = () => {
           </label>
           <input
             type="time"
+            required
             id="end"
             className="px-4 py-1 items-center bg-[#ECEBE4] md:w-full w-[150px] rounded-md check-time"
             onChange={(e) =>
@@ -460,6 +466,7 @@ export const Inputs = () => {
           </label>
           <input
             type="number"
+            required
             id="infeed_interval"
             placeholder="Seconds between each infeed"
             className="px-4 py-1 items-center bg-[#ECEBE4] md:w-full w-[150px] rounded-md"
@@ -545,7 +552,7 @@ export const Inputs = () => {
           </label>
           <input
             type="text"
-            id="Session-ID"
+            id="rejections"
             placeholder="Rejected Count"
             className="px-4 py-1 items-center bg-[#ECEBE4] md:w-full w-[150px] rounded-md"
             onChange={(e) =>
@@ -562,7 +569,7 @@ export const Inputs = () => {
           </label>
           <input
             type="text"
-            id="Session-ID"
+            id="manualIntervention"
             placeholder="Manual Intervention"
             className="px-4 py-1 items-center bg-[#ECEBE4] md:w-full w-[150px] rounded-md"
             onChange={(e) =>
@@ -579,6 +586,7 @@ export const Inputs = () => {
           </label>
           <textarea
             id="remarks"
+            required
             placeholder="No. of packest sorted"
             className="px-4 py-1 items-center bg-[#ECEBE4] md:w-full w-[150px] rounded-md"
             onChange={(e) => dispatch(setTestData({ remarks: e.target.value }))}
