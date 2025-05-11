@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mayoogh.github.io/Throughput_Calculator-main",
+  "homepage": "https://mayoogh.github.io/mSort-Performance-Tracker",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
