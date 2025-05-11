@@ -4,6 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/Throughput_Calculator/",
+  base: "/Throughput_Calculator-main/",
   plugins: [react(), tailwindcss()],
 });

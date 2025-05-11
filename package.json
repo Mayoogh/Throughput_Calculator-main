@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://abijithtrixtr1997.github.io/Throughput_Calculator",
+  "homepage": "https://mayoogh.github.io/Throughput_Calculator-main",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
